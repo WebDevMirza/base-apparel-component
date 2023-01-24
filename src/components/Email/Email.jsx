@@ -1,5 +1,6 @@
 import "./email.css";
 import ArrowIcon from "../../assets/images/icon-arrow.svg";
+import ErrorIcon from "../../assets/images/icon-error.svg";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -21,13 +22,14 @@ const Email = () => {
       <form onSubmit={formik.handleSubmit} noValidate>
         <div className="email-form">
           <input
-            className={formik.touched.email && formik.errors.email ? "email-address bg-error" : "email-address"}
+            className="email-address"
             name="email"
             type="email"
             placeholder="Email Address"
             onChange={formik.handleChange}
             value={formik.values.email}
           />
+          {formik.touched.email && formik.errors.email ? <img className="bg-error" src={ErrorIcon} alt="" /> : null}
           <button className="btn" type="submit" aria-label="submit">
             <img src={ArrowIcon} alt="" />
           </button>

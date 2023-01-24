@@ -13,7 +13,10 @@
 }
 
 .bg-error {
-  background: url(../../assets//images/icon-error.svg) no-repeat center right 100px;
+  position: absolute;
+  top: 5px;
+  right: 115px;
+  transform: translateY(50%);
 }
 
 .email-address {
@@ -33,10 +36,6 @@
 
   .error {
     left: 32px;
-  }
-
-  .bg-error {
-    background: url(../../assets//images/icon-error.svg) no-repeat center right 70px;
   }
 
   .email-address {
