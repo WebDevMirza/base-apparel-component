@@ -9,12 +9,35 @@
   display: none;
 }
 
+.mobile {
+  margin: 2rem 0 2rem 1.5rem;
+}
+
+.profile-img {
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 1024px) {
   .wrapper {
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 1024px;
-    width: 90%;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .desktop-card-body {
+    max-width: 35%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+  }
+
+  .card-img,
+  picture,
+  .card-img img {
+    max-height: 100vh;
+    margin-left: auto;
   }
 
   .desktop {
@@ -23,14 +46,5 @@
 
   .mobile {
     display: none;
-  }
-
-  .card-body {
-    max-width: 50vw;
-    width: 85%;
-  }
-  .card-img {
-    max-width: 30vw;
-    width: 55%;
   }
 }

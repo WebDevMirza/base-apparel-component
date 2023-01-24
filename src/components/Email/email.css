@@ -1,0 +1,53 @@
+.email-form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .email-form {
+    justify-content: flex-start;
+  }
+}
+
+.email-address {
+  position: absolute;
+  padding: 1.25rem 2rem;
+  width: 90%;
+  border-radius: 2rem;
+  outline: 0;
+  border: 1px solid var(--DesaturatedRed);
+  color: var(--DarkGrayishRed);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--DarkGrayishRed);
+}
+
+.email-address::placeholder {
+  color: var(--DesaturatedRed);
+  opacity: 0.5;
+}
+
+/* Button */
+
+.btn {
+  position: absolute;
+  right: 0;
+  transform: translateX(-25%);
+  padding: 1.25rem 2rem;
+  border-radius: 2rem;
+  border: 0;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: hsla(0, 93%, 68%, 0.8) 0px 18px 50px -10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 1.2 1.1;
+  transition: all 0.2s ease;
+}
