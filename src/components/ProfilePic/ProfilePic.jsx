@@ -5,7 +5,7 @@ const ProfilePic = () => {
   return (
     <>
       <picture>
-        <source media="(min-width: 1024px)" srcset={ProfileD} />
+        <source media="(min-width: 1024px)" srcSet={ProfileD} />
         <img className="profile-img" src={ProfileM} alt="Profile picture" />
       </picture>
     </>

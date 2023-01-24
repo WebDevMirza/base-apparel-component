@@ -2,12 +2,31 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
+}
+
+.error {
+  position: absolute;
+  color: var(--SoftRed);
+  top: 70px;
+  left: 50px;
+}
+
+.bg-error {
+  background: url(../../assets//images/icon-error.svg) no-repeat center right 100px;
 }
 
 @media (min-width: 1024px) {
   .email-form {
     justify-content: flex-start;
+  }
+
+  .error {
+    left: 32px;
+  }
+
+  .bg-error {
+    background: url(../../assets//images/icon-error.svg) no-repeat center right 70px;
   }
 }
 
@@ -45,6 +64,10 @@ input:-webkit-autofill:active {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   box-shadow: hsla(0, 93%, 68%, 0.8) 0px 18px 50px -10px;
   cursor: pointer;
+}
+
+.btn:focus-visible {
+  outline: 1px var(--SoftRed) solid;
 }
 
 .btn:hover {
