@@ -28,7 +28,7 @@ const Email = () => {
             onChange={formik.handleChange}
             value={formik.values.email}
           />
-          <button className="btn" type="submit">
+          <button className="btn" type="submit" aria-label="submit">
             <img src={ArrowIcon} alt="" />
           </button>
           {formik.touched.email && formik.errors.email ? <p className="error">Please provide a valid email</p> : null}
