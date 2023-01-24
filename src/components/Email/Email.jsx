@@ -12,7 +12,7 @@ const Email = () => {
       email: Yup.string().email("worng email").required("email is required"),
     }),
     onSubmit: (values) => {
-      console.log(values);
+      alert(`Your email address is ${values.email}.`);
     },
   });
 
